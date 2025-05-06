@@ -1,3 +1,4 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 import {
   Deck,
@@ -13,6 +14,10 @@ import {
   OrderedList,
   Image,
 } from "spectacle";
+
+// Видаляємо імпорти зображень
+// import screenshot1 from './Screenshot 2025-05-06 at 22.24.31.png';
+// import screenshot2 from './Screenshot 2025-05-06 at 22.25.04.png';
 
 const Presentation = () => (
   <Deck template={() => <DefaultTemplate />}>
@@ -181,10 +186,10 @@ const Presentation = () => (
         </Heading>
         <Box width="90%">
           <Box marginBottom="30px">
-            <Image src="./Screenshot 2025-05-06 at 22.24.31.png" width="100%" />
+            <Image src="/Screenshot 2025-05-06 at 22.24.31.png" width="100%" />
           </Box>
           <Box>
-            <Image src="./Screenshot 2025-05-06 at 22.25.04.png" width="100%" />
+            <Image src="/Screenshot 2025-05-06 at 22.25.04.png" width="100%" />
           </Box>
         </Box>
       </FlexBox>
